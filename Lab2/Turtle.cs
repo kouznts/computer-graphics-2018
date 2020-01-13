@@ -116,7 +116,7 @@ namespace Lab2
         {
             state = new TurtleState(startPoint, startAngle);
 
-            foreach (char ch in grammar.ResStr)
+            foreach (char ch in grammar.Code)
             {
                 switch (ch)
                 {
