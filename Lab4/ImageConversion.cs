@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace Lab4
 {
-    public static class ImageEditing
+    public static class ImageConversion
     {
         public static void Grayscale(Bitmap image)
         {
