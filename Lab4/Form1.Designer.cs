@@ -26,14 +26,14 @@
             this.gbSettings = new System.Windows.Forms.GroupBox();
             this.tbDetectEdgesThreshold = new System.Windows.Forms.TextBox();
             this.tbMonochromeThreshold = new System.Windows.Forms.TextBox();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer = new System.Windows.Forms.SplitContainer();
             this.pbOldImage = new System.Windows.Forms.PictureBox();
             this.pbNewImage = new System.Windows.Forms.PictureBox();
             this.gbSettings.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
+            this.splitContainer.Panel1.SuspendLayout();
+            this.splitContainer.Panel2.SuspendLayout();
+            this.splitContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbOldImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNewImage)).BeginInit();
             this.SuspendLayout();
@@ -147,33 +147,33 @@
             this.tbMonochromeThreshold.Text = "100";
             this.tbMonochromeThreshold.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbMonochromeThreshold_KeyPress);
             // 
-            // splitContainer1
+            // splitContainer
             // 
-            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.splitContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.splitContainer1.IsSplitterFixed = true;
-            this.splitContainer1.Location = new System.Drawing.Point(9, 9);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.splitContainer1.MinimumSize = new System.Drawing.Size(405, 200);
-            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer.IsSplitterFixed = true;
+            this.splitContainer.Location = new System.Drawing.Point(9, 9);
+            this.splitContainer.Margin = new System.Windows.Forms.Padding(0);
+            this.splitContainer.MinimumSize = new System.Drawing.Size(405, 200);
+            this.splitContainer.Name = "splitContainer";
             // 
-            // splitContainer1.Panel1
+            // splitContainer.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.pbOldImage);
-            this.splitContainer1.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.splitContainer1.Panel1MinSize = 200;
+            this.splitContainer.Panel1.Controls.Add(this.pbOldImage);
+            this.splitContainer.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.splitContainer.Panel1MinSize = 200;
             // 
-            // splitContainer1.Panel2
+            // splitContainer.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.pbNewImage);
-            this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.splitContainer1.Panel2MinSize = 200;
-            this.splitContainer1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.splitContainer1.Size = new System.Drawing.Size(698, 386);
-            this.splitContainer1.SplitterDistance = 343;
-            this.splitContainer1.SplitterWidth = 5;
-            this.splitContainer1.TabIndex = 9;
+            this.splitContainer.Panel2.Controls.Add(this.pbNewImage);
+            this.splitContainer.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.splitContainer.Panel2MinSize = 200;
+            this.splitContainer.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.splitContainer.Size = new System.Drawing.Size(698, 386);
+            this.splitContainer.SplitterDistance = 343;
+            this.splitContainer.SplitterWidth = 5;
+            this.splitContainer.TabIndex = 9;
             // 
             // pbOldImage
             // 
@@ -197,7 +197,7 @@
             this.pbNewImage.Location = new System.Drawing.Point(0, 0);
             this.pbNewImage.MinimumSize = new System.Drawing.Size(200, 200);
             this.pbNewImage.Name = "pbNewImage";
-            this.pbNewImage.Size = new System.Drawing.Size(343, 386);
+            this.pbNewImage.Size = new System.Drawing.Size(342, 386);
             this.pbNewImage.TabIndex = 1;
             this.pbNewImage.TabStop = false;
             // 
@@ -206,7 +206,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(716, 497);
-            this.Controls.Add(this.splitContainer1);
+            this.Controls.Add(this.splitContainer);
             this.Controls.Add(this.gbSettings);
             this.Controls.Add(this.btnSaveImage);
             this.Controls.Add(this.btnOpenAndConvertImage);
@@ -215,10 +215,10 @@
             this.Text = "Преобразование изображения";
             this.gbSettings.ResumeLayout(false);
             this.gbSettings.PerformLayout();
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
+            this.splitContainer.Panel1.ResumeLayout(false);
+            this.splitContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).EndInit();
+            this.splitContainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbOldImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNewImage)).EndInit();
             this.ResumeLayout(false);
@@ -234,7 +234,7 @@
         private System.Windows.Forms.RadioButton rbMonochrome;
         private System.Windows.Forms.RadioButton rbDetectEdges;
         private System.Windows.Forms.GroupBox gbSettings;
-        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.SplitContainer splitContainer;
         private System.Windows.Forms.PictureBox pbOldImage;
         private System.Windows.Forms.PictureBox pbNewImage;
         private System.Windows.Forms.TextBox tbMonochromeThreshold;
