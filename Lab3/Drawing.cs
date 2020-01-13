@@ -6,6 +6,9 @@ namespace Lab
 {
     public static class Drawing
     {
+        public static readonly int MIN_PIXEL_SIZE = 1;
+        public static readonly Color DEFAULT_COLOR = Color.Black;
+
         public static void DrawPixel(Graphics gr, int size, Color color, int x, int y)
         {
             gr.SmoothingMode = SmoothingMode.None;
